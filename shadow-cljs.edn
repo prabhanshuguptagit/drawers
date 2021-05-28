@@ -1,0 +1,6 @@
+{:source-paths ["app/assets/javascripts/cljs/"]
+ :dependencies [[reagent "1.0.0"]]
+ :builds       {:app {:output-dir "app/assets/javascripts/cljs/build"
+                      :asset-path "assets/cljs/build"
+                      :target     :browser
+                      :modules    {:base {:entries [base]}}}}}
