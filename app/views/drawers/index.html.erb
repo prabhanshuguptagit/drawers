@@ -1,3 +1,8 @@
 <% @drawers.each do |drawer| %>
   <%= drawer.name %>
+  <br>
+<% end %>
+<%= form_with model: @drawer do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit %>
 <% end %>
